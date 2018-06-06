@@ -21,10 +21,4 @@ public class PlayerBottomCollider : MonoBehaviour {
 			isGrounded = true;
 		}
 	}
-	/*
-	void OnTriggerExit2D(Collider2D other) {
-		if (other.gameObject.tag == "Ground") {
-			isGrounded = false;
-		}
-	}*/
 }

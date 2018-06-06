@@ -7,13 +7,13 @@ public class GameManager : MonoBehaviour {
 	public bool gameStarted = false;
 	public bool playerDead = false;
 
-	private PlayerLib playerLib_;
+	private PlayerScript playerScript_;
 	private GUIManager guiManager_;
 	private ScoreManager scoreManager_;
 
 	// Use this for initialization
 	void Start () {
-		playerLib_ = GameObject.Find ("Player").GetComponent<PlayerLib> ();
+		playerScript_ = GameObject.Find ("Player").GetComponent<PlayerScript> ();
 		guiManager_ = this.GetComponent<GUIManager> ();
 		scoreManager_ = this.GetComponent<ScoreManager> ();
 	}
